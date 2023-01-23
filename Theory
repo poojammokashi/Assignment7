@@ -1,0 +1,27 @@
+What are the various ways to add images into our App? Explain with code example?
+There are two ways we can add images
+a.<img src="https://image.png"/>
+
+b.By relative path we need to import the image from the folder
+import Logo from './img/pic.png';
+
+<img src={logo}/>
+
+What will happen if we do console.log(useState())?
+ƒ useState(initialState) {
+        var dispatcher = resolveDispatcher();
+        return dispatcher.useState(initialState);
+    }
+
+
+
+How will useEffect behave if we don't have dependency array?
+If we don't pass dependency array useEffect will run  at first render and after every state update.
+
+What is SPA?
+It's a web app implementation that loads only a single web document and then updates the body content of that single document.
+
+
+What is the difference between client-side and server-side routing?
+The difference between this two routing have been stated above server sides needs to keep making requests to the server in order for the application to rerender,
+but client side does not need to keep make request to the server, it just does it once when the application is being loaded into the browser any other 
